@@ -108,7 +108,7 @@ $(document).ready(function () {
 
   const loadMetadata = () => {
     jsmediatags.read(
-      `http://${window.location.hostname}:${window.location.port}/songs/${songs[iter]}.mp3`,
+      `https://github.com/theunderdogdev/theunderdogdev.github.io/tree/master/songs/${songs[iter]}.mp3`,
       {
         onSuccess: function (tag) {
           let picture = tag.tags.picture;
@@ -174,7 +174,7 @@ $(document).ready(function () {
     console.log(player.duration, player);
   };
   let iter = 0;
-  let player = new Audio(`/songs/${songs[iter]}.mp3`);
+  let player = new Audio(`./songs/${songs[iter]}.mp3`);
 
   $(".nav-item").click(function () {
     $(".nav-item.active").removeClass("active");
