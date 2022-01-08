@@ -108,7 +108,7 @@ $(document).ready(function () {
 
   const loadMetadata = () => {
     jsmediatags.read(
-      `https://github.com/theunderdogdev/theunderdogdev.github.io/tree/master/songs/${songs[iter]}.mp3`,
+      `https://theunderdogdev.github.io/songs/${songs[iter]}.mp3`,
       {
         onSuccess: function (tag) {
           let picture = tag.tags.picture;
